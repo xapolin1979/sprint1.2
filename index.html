@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap&Sass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg bg-body-white">
+      <div class="container-fluid" id="containerNavBar">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo-bookmark (1).svg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./img/logo-blanco.png" alt="" /></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div
+          class="offcanvas-body "
+        >
+          <ul class="navbar-nav justify-content-lg-end flex-lg-grow-1 flex-md-grow-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link  active px-4 " aria-current="page" href="#" id="enlacesNav">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#" id="enlacesNav">PRICING</a>
+            </li>
+
+            <li class="nav-item" id="nav_item_ultimo">
+              <a class="nav-link px-4" href="#" id="enlacesNav">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-center align-items-center" role="search" id="form_navbar">
+            <button
+              type="button"
+              class="btn btn-secondary px-5 p-2 justify-content-center btn_intro"
+              id="btns"
+            >
+              LOGIN
+            </button>
+            <button type="button" class="btn btn-outline-light px-5 p-2 ">LOGIN</button>
+       </form> 
+       <div class="redes">
+        <img src="./img/icon-facebook.svg" alt="">
+        <img src="./img/icon-twitter.svg" alt="">
+       </div>
+        </div>
+      </div>
+    </nav>
+    <!-- bloque1 -->
+    <div class="container-fluid mt-5">
+      <div class="row row_c1">
+        <div class="c1 col-sm-12 col-md-12 col-lg-6">
+          <div class="c1_contenido">
+            <h1>A simple Bookmark Manager</h1>
+            <p>
+              A clean and simple inteface to organize you favorite websites.Open
+              a new broser tab and see your sites load instantly.Try it for free
+            </p>
+            <div class="c1_btns">
+              <button type="button" id="btns" class="btn btn-primary px-2 p-2">
+                Get in on Chrome
+              </button>
+              <button type="button" id="btns" class="btn btn-info px-2 p-2">
+                Get in on Firefox
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="c2_contenido col-sm-12 col-md-12 col-lg-6">
+          <img class="imagen1" src="./img/illustration-hero (1).svg" alt="" />
+          <div class="fondo_azul"></div>
+        </div>
+      </div>
+    </div>
+    <!-- bloque2 -->
+    <div class="container">
+      <div class="row">
+        <div class="c3 col-12">
+          <div class="c3_contain">
+            <h2>Features</h2>
+            <p>
+              Our aim is to make it quick easy for you to access your favourite
+              websites.Your bookmaks sync between your devices so you can access
+              them on the go
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bloque3 tabs -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <ul class="nav nav-tabs">
+            <li class="bordes">
+              <a class="nav-link active" href="#inicio" data-bs-toggle="tab"
+                >Simple Bookmarking</a
+              >
+            </li>
+            <li class="bordes">
+              <a class="nav-link" href="#hola" data-bs-toggle="tab"
+                >Speedy Searching</a
+              >
+            </li>
+            <li class="bordes">
+              <a class="nav-link" href="#contacto" data-bs-toggle="tab"
+                >Easy Sharing</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-content mt-5">
+        <div class="tab-pane fade in active show" id="inicio">
+          <div class="row">
+            <div class="c4_contenido col-sm-12 col-md-12 col-lg-6" id="c4">
+              <img
+                class="imagen2"
+                src="./img/illustration-features-tab-1.svg"
+                alt=""
+              />
+              <div class="fondo_azul_2"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" id="c5">
+              <div class="c4_contenido2">
+                <h2>Bookmarck in one click</h2>
+                <p>
+                  Organize your bookmarck however your like.Our simple
+                  drag-and-drop interfaces gives your completecontrol over how
+                  you manage you favorite sites
+                </p>
+                <button
+                  type="button"
+                  id="btns2"
+                  class="btn btn-primary px-2 p-2"
+                >
+                  More info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="hola">
+          <div class="row">
+            <div class="c4_contenido col-sm-12 col-md-12 col-lg-6" id="c4">
+              <img
+                class="imagen2"
+                src="./img/illustration-features-tab-2 (1).svg"
+                alt=""
+              />
+              <div class="fondo_azul_2"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" id="c5">
+              <div class="c4_contenido2">
+                <h2>Intelligent search</h2>
+                <p>
+                  Our powerful search feature will help you find saved sites in no time at all.No need to trawl through all of your bookmarks
+                </p>
+                <button
+                  type="button"
+                  id="btns2"
+                  class="btn btn-primary px-2 p-2"
+                >
+                  More info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contacto">
+          <div class="row">
+            <div class="c4_contenido col-sm-12 col-md-12 col-lg-6" id="c4">
+              <img
+                class="imagen2"
+                src="./img/illustration-features-tab-3 (1).svg"
+                alt=""
+              />
+              <div class="fondo_azul_2"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" id="c5">
+              <div class="c4_contenido2">
+                <h2>Share your bookmarks</h2>
+                <p>
+                   Easy share your bookmarks and collections with others.Create a shareable link that you can send at the click of button
+                </p>
+                <button
+                  type="button"
+                  id="btns2"
+                  class="btn btn-primary px-2 p-2"
+                >
+                  More info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bloque4 -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="c6">
+            <div class="c6_contenido">
+              <h2>Dowload the extension</h2>
+              <p>
+                We´ve got more browsers in the pipeline.Please do let us know if
+                you´ve got a favourite you´d like us to prioritize.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bloque5 -->
+      <div class="container" id="c7">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4" id="c7_col1">
+            <div class="card text-center" id="targetas" style="width: 18rem">
+              <div class="imagen3">
+                <img
+                  id="img3"
+                  src="./img/logo-chrome.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><strong>Add to Chrome</strong></h5>
+                <p class="card-text">Minimum version 62</p>
+                <img src="./img/bg-dots (1).svg" alt="" />
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4" id="c7_col2">
+            <div class="card text-center" id="targetas" style="width: 18rem">
+              <div class="imagen3">
+                <img
+                  id="img3"
+                  src="./img/logo-firefox.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><strong>Add to Chrome</strong></h5>
+                <p class="card-text">Minimum version 62</p>
+                <img src="./img/bg-dots (1).svg" alt="" />
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-4" id="c7_col3">
+            <div class="card text-center" id="targetas" style="width: 18rem">
+              <div class="imagen3">
+                <img
+                  id="img3"
+                  src="./img/logo-opera.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><strong>Add to Chrome</strong></h5>
+                <p class="card-text">Minimum version 62</p>
+                <img src="./img/bg-dots (1).svg" alt="" />
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bloque6 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="c6">
+            <div class="c6_contenido">
+              <h2>Frequently Asked Questions</h2>
+              <p>
+                Here are some of our FAQs. If you have any other questions you´d
+                like answered please feel free to email us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bloque7 -->
+
+      <div class="container" id="c8">
+        <div class="row">
+          <div class="col-12" id="c8_contenido">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What is Bookmark?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse "
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laborum similique assumenda fuga distinctio nihil
+                      voluptates sequi maxime cumque, praesentium quia earum
+                      mollitia aspernatur voluptatem exercitationem asperiores
+                      recusandae labore! Eius, consequuntur!
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How can I request a new browser
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Laborum similique assumenda fuga distinctio nihil
+                        voluptates sequi maxime cumque, praesentium quia earum
+                        mollitia aspernatur voluptatem exercitationem asperiores
+                        recusandae labore! Eius, consequuntur!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Is ther a mobile app?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Laborum similique assumenda fuga distinctio nihil
+                        voluptates sequi maxime cumque, praesentium quia earum
+                        mollitia aspernatur voluptatem exercitationem asperiores
+                        recusandae labore! Eius, consequuntur!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="ultimo_acordeon">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      What about other Chromium browser
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Laborum similique assumenda fuga distinctio nihil
+                        voluptates sequi maxime cumque, praesentium quia earum
+                        mollitia aspernatur voluptatem exercitationem asperiores
+                        recusandae labore! Eius, consequuntur!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="button_Acordeon">
+                  <button
+                    type="button"
+                    id="btns"
+                    class="btn btn-primary px-3 p-2"
+                  >
+                    More info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bloque8 -->
+    <div class="container-fluid">
+      <div class="row" id="c9">
+        <div class="col-12" id="c9_contenido">
+          <h6>35.000 + ALREADY JOINED</h6>
+          <h2>Stay up-to-date with what</h2>
+          <h2>we´re doing</h2>
+          <form class="row g-3 needs-validation mt-3 "  novalidate id="form">
+              <div class="col-sm-12 col-md-12 col-lg-8 position-relative  " id="form_imput">
+                   <label for="validationCustom01" class="form-label"></label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="example@email/com" required>
+    
+                   <div class="invalid-tooltip ">
+                    whoops, make sure it´s an email
+                   </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 " id="form_btn">
+                   <button
+                     type="submit"
+                     class="btn btn-secondary px-4   border-2" id="btn_form">
+                      Contact Us
+                    </button>
+              </div>
+             
+            
+          </form>
+           
+    </div>
+
+
+
+<!--footer-->
+
+<div class="divcontainer-fluid">
+
+  <div class="row">
+    <div class="footer col-12 ">
+
+      <div class="contenidoFotter">
+        <div class="navigate">
+          <img src="./img/logo-blanco.png" alt="" />
+          
+            <a class="nav-link  active px-4 " aria-current="page" href="#" id="enlacesNav">FEATURES</a>
+      
+    
+            <a class="nav-link px-4" href="#" id="enlacesNav">PRICING</a>
+     
+
+            <a class="nav-link px-4" href="#" id="enlacesNav">CONTACT</a>
+    
+        </ul>
+
+        </div>
+
+        <div class="logos">
+          <div class="imagenLogo1"></div>
+          <div class="imagenLogo2"></div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+    </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
